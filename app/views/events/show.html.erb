@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Number of attendees:</strong>
+  <%= @event.number_of_attendees %>
+</p>
+
+<%= render 'comments/index', comments: @event.comments %>
+<%= render 'comments/form', commentable: @event %>

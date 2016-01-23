@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @photo.name %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @photo.image_url %>
+</p>
+
+<%= render 'comments/index', comments: @photo.comments %>
+<%= render 'comments/form', commentable: @photo %>

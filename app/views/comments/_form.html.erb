@@ -1,0 +1,11 @@
+<h2>New Comment</h2>
+
+<%= form_for [commentable,Comment.new] do |f| %>
+
+    <div class="field">
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+    </div>
+
+    <%= f.submit %>
+<% end %>
